@@ -165,7 +165,7 @@ We want to make sur that our scale of our data is correct. If two variables in t
 \end{equation*}
 Because the data we are dealing with have such variable scales (length is a longer scale than trophic position), we z-correct it. We do this on trophic position and fish length, and we add it to our data set. \\
 To know if a mixed model is necessary for our data, we need to determine whether it is important to take into account the random effect of factors that could influence the relationship that interests us (here, Lake and Species).\\
-Let us then determine whether it is important to account for variations in "random effects" by comparing
+Let us then determine whether it is important to account for variations in "random effect" by comparing
 the residuals of a linear model without the random effects versus the potential random effects.
 Our model is : $Z_{TP} \sim Z_{Length}$.\\
 We take the stadardized residuals from the model based on the correction $Z$ done on fish length and trophic position.\\
@@ -188,7 +188,7 @@ For this model, we should keep the random effects because the standardized resid
 \subsection{Potential models and model selection}
 We have the following a priori model:
 \begin{equation*}
-    PT_{ijk} \sim Length_i + Lake_j + Species_k + \epsilon
+    TP_{ijk} \sim Length_i + Lake_j + Species_k + \epsilon
 \end{equation*}
 We are going to do a comparison of potential models to choose the better one. We want to compare them between them to select the one (those) who has (have) the greatest predictive power, and to choose correctly we are going to use models with the lowest AIC. We will, then, compare the following models.
 
@@ -286,8 +286,10 @@ We have the following graphic.
 \end{figure}
 
 \section{Conclusion}
+In our case, the trophic position increases with the size of the fish.\\
+
 Mixed models are really good at accounting for variation in ecological data while not loosing too many degrees of freedom.\\
-We have covered only a small portion of what MLMs can do. Maybe with other dataset, we will use different thing to have a great model and interpretation.
+We have covered only a small portion of what LMM's can do. Maybe with other dataset, we will use different thing to have a great model and interpretation.
 
 \newpage
 \bibliographystyle{alpha}
