@@ -269,7 +269,6 @@ abline(0,0)
 plt.title('Model homogeneity')
 plt.xlabel('Fitted values')
 plt.ylabel('Normalized riduals')
-plt.show()
 plt.savefig('Model_validation_homo.pdf')
 
 #################################
@@ -283,7 +282,6 @@ abline(0,0)
 plt.xlabel('Z_Length')
 plt.ylabel('Normalized riduals')
 plt.legend(loc='best')
-plt.show()
 plt.savefig('Model_validation_ind.pdf')
 
 # Species
@@ -320,7 +318,6 @@ plt.hist(E1, density=True, bins=50)
 plt.title('Histogram of the normalized residuals')
 plt.xlabel('Normalized residuals')
 plt.ylabel('Frequency')
-plt.show()
 plt.savefig('hist_check_normality.pdf')
 
 # All data visualization
@@ -330,5 +327,4 @@ plt.title('All data')
 plt.xlabel('Length (mm)')
 plt.ylabel('Trophic position')
 abline(slope = 0.423, intercept = -1.079)
-plt.show()
 plt.savefig('Model_visual_all_data.pdf')
